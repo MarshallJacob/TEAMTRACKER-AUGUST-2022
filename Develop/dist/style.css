@@ -1,0 +1,23 @@
+.nav {
+    color: white;
+    display: flex;
+    justify-content: center;
+    padding: 50px;
+}
+#listTitle {
+    text-decoration: underline;
+    text-align: center;
+    padding: 50px;
+}
+#cards {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.card {
+    display: flex;
+    align-items: center;
+    margin: 50px 0 0 2%;
+    flex-grow: 1;
+    border-color: red;
+}
