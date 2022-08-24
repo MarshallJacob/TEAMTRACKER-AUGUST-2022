@@ -4,7 +4,7 @@ const Employee = require("./Employee");
 // Manager constructor has more/different info than employee constructor. Here we are using extend and super to add/change original constructor for Manager criteria
 class Manager extends Employee {
     constructor (name, id, email, oNumber) {
-        super (name, id, emial);
+        super (name, id, email);
 
         this.oNumber = oNumber;
     }

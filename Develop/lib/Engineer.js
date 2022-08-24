@@ -3,8 +3,8 @@ const Employee = require("./Employee");
 
 // Engineer constructor has more/different than employee constructor. Here we are using extend and super to add/change original constructor for Engineer criteria
 class Engineer extends Employee {
-    constructor (name, id, email) {
-        super (name, id, emial);
+    constructor (name, id, email, github) {
+        super (name, id, email);
 
         this.github = github;
     }

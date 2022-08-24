@@ -1,4 +1,4 @@
-const generateHtmlPage = function generateHtmlPage(generatedCards) {
+const generateHtmlPage = function (generatedCards) {
     return`
     <!DOCTYPE html>
 <html lang="en">
@@ -74,3 +74,34 @@ const internInfo = function (intern) {
     </div>
     `
 }
+
+// Create  for loop to iterate through the data and take into account the different roles/information
+generateHTML = (data) => {
+    pageArray = [];
+
+    for (let i = 0; i < data.length; i++) {
+        const employee = data[i];
+        const role = employee.getRole();
+
+        if (role === 'Manager') {
+            const managerCard = managerInfo(employee);
+
+            pageArray.push(managerCard)
+        }
+        if (role === 'Engineer') {
+            const engineerCard = engineerInfo(employee);
+
+            pageArray.push(engineerCard)
+        }
+        if (role === 'intern') {
+            const internCard = internInfo(employee);
+
+            pageArray.push(internCard)
+        }
+    }
+    const generatedCards = pageArray.join('');
+    const createTeam = generateHtmlPage(generatedCards);
+    return createTeam
+};
+
+module.exports = generateHTML;
