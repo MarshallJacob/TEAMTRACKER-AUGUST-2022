@@ -9,26 +9,18 @@ const generateHTML = require('./src/generateHTML');
 
 const teamArray = []; 
 
-// Initial prompt questions generated when running the app 
+// Initial prompt questions generated when running "node index.js" in the terminal 
 const addManager = () => {
     return inquirer.prompt ([
         {
             type: 'input',
             name: 'name',
-            message: 'What is the managers name?', 
+            message: 'What is the managers name?'
         },
         {
             type: 'input',
             name: 'id',
             message: "Please enter the manager's ID #.",
-            validate: nameInput => {
-                if  (isNaN(nameInput)) {
-                    console.log ("Please enter a number!")
-                    return false; 
-                } else {
-                    return true;
-                }
-            }
         },
         {
             type: 'input',
