@@ -73,7 +73,7 @@ const internInfo = function (intern) {
         </div>
     </div>
     `
-}
+};
 
 // Create  for loop to iterate through the data and take into account the different roles/information
 generateHTML = (data) => {
