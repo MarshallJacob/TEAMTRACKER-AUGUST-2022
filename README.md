@@ -31,6 +31,11 @@ Academic
 
 ### If you have any questions you can find me through
 
+[Demo video](https://drive.google.com/file/d/1WKBqEIa2k5HB3gcKD8FIlt5j5B-BHccK/view)
+
+[Github link:](https://github.com/MarshallJacob/TEAMTRACKER-AUGUST-2022) 
+
+
 Github [@MarshallJacob](https://github.com/@MarshallJacob)
 or
-Email marshall.jacob16@icloud.com
+Email: marshall.jacob16@icloud.com

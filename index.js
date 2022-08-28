@@ -31,10 +31,10 @@ const addManager = async() => {
             message: "Please enter the manager's ID #.",
             validate: userInput => {
                 if(isNaN(userInput)) {
-                    return true;
+                    return false;
                 } else {
                     console.log("Please enter a valid ID.")
-                    return false;
+                    return true;
                 }
             }
         },
@@ -57,10 +57,10 @@ const addManager = async() => {
             message: "Please enter the manager's office number",
             validate: userInput => {
                 if(isNaN(userInput)) {
-                    return true;
+                    return false;
                 } else {
                     console.log("Please enter a valid office number.")
-                    return false;
+                    return true;
                 }
             }
         }
@@ -103,8 +103,8 @@ const addTeamMember = () => {
             type: 'input',
             name: 'id',
             message: "Please enter the team member ID.",
-            validate: nameInput => {
-                if  (isNaN(nameInput)) {
+            validate: userInput => {
+                if  (isNaN(userInput)) {
                     console.log ("Please enter a valid ID number!")
                     return false; 
                 } else {
